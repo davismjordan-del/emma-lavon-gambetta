@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
-  <style
+  <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --cream: #FAF7F2; --parchment: #F0EBE1; --gold: #B89A6A; --charcoal: #2C2C2A; --muted: #8C857A; }
     html { scroll-behavior: smooth; }
@@ -135,7 +135,7 @@
     <p class="scroll-hint">Scroll to view gallery</p>
   </div>
   <div class="hero-right">
-    <img src="https://drive.google.com/thumbnail?id=1rqeOSSeTrn-Jw62lM-RMNEdg7CLoiGYw&sz=w1200" alt="Emma Lavon Gambetta" loading="eager" />
+    <img src="https://lh3.googleusercontent.com/d/1rqeOSSeTrn-Jw62lM-RMNEdg7CLoiGYw=w1200" alt="Emma Lavon Gambetta" loading="eager" />
   </div>
 </section>
 <section class="quote-section fade-in">
@@ -197,7 +197,7 @@
     item.dataset.type = isBW ? 'bw' : 'color';
     item.dataset.galleryIndex = i + 1;
     const img = document.createElement('img');
-    img.src = `https://drive.google.com/thumbnail?id=${id}&sz=w800`;
+    img.src = `https://lh3.googleusercontent.com/d/${id}=w800`;
     img.alt = `Emma Lavon Gambetta — Photo ${i + 2}`;
     img.loading = 'lazy';
     const overlay = document.createElement('div');
@@ -238,7 +238,7 @@
   function openLightbox(visibleIdx) {
     currentLBIdx = visibleIdx;
     const realIdx = visibleIndexes[visibleIdx];
-    lbImg.src = `https://drive.google.com/thumbnail?id=${ids[realIdx]}&sz=w1600`;
+    lbImg.src = `https://lh3.googleusercontent.com/d/${ids[realIdx]}=w1600`;
     lbCount.textContent = `${visibleIdx + 1} / ${visibleIndexes.length}`;
     lb.classList.add('active');
     document.body.style.overflow = 'hidden';
